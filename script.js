@@ -469,6 +469,35 @@ function setupScrollEffects() {
     .forEach((el) => {
       observer.observe(el);
     });
+
+  // Gestion de la visibilité du toggle de langue
+  const languageToggle = document.getElementById("languageToggle");
+  const languageSwitch = document.getElementById("languageSwitch");
+  const homeSection = document.getElementById("home");
+
+  if (languageToggle && homeSection) {
+    const homeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            languageToggle.style.opacity = "1";
+            languageToggle.style.pointerEvents = "auto";
+          } else {
+            languageToggle.style.opacity = "0";
+            languageToggle.style.pointerEvents = "none";
+            // Masquer aussi le menu déroulant
+            if (languageSwitch) {
+              languageSwitch.style.display = "none";
+              languageToggle.classList.remove("active");
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    homeObserver.observe(homeSection);
+  }
 }
 
 // Formulaire de contact
