@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hannick Abdul Kuthoos - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <!-- Social Links -->
+      <div class="social-links">
+        <a
+          href="https://github.com/Hannick5"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hannick-abdul-kuthoos/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            />
+          </svg>
+        </a>
+
+        <!-- Language Switch -->
+        <div class="language-switch">
+          <button class="language-btn active" data-lang="fr">FR</button>
+          <button class="language-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li>
+          <a href="#home" class="nav-link" data-section="home">Accueil</a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link" data-section="projects"
+            >Mes Projets</a
+          >
+        </li>
+        <li><a href="#cv" class="nav-link" data-section="cv">CV</a></li>
+        <li>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="floating-element"></div>
+      <div
+        class="floating-element"
+        style="top: 20%; right: 10%; animation-delay: 2s"
+      ></div>
+      <div
+        class="floating-element"
+        style="bottom: 20%; left: 15%; animation-delay: 4s"
+      ></div>
+
+      <h1 class="hero-title">Hannick Abdul Kuthoos</h1>
+      <p class="hero-subtitle" data-translate="subtitle">
+        Développeur fullstack & DevOps avec une expertise en analyse
+        géospatiale.
+      </p>
+      <a href="#projects" class="cta-button" data-translate="ctaButton"
+        >Découvrir mes projets</a
+      >
+
+      <!-- Scroll Arrow -->
+      <div class="scroll-arrow" id="scrollArrow">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M7 13l5 5 5-5" />
+          <path d="M7 6l5 5 5-5" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title" data-translate="projectsTitle">
+          Mes Projets
+        </h2>
+        <p class="section-subtitle" data-translate="projectsSubtitle">
+          Une sélection de mes réalisations les plus récentes
+        </p>
+
+        <!-- Légende des icônes GitHub -->
+        <div class="github-legend">
+          <div class="legend-item">
+            <div class="github-icon available">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+            <span data-translate="sourceCodeAvailable"
+              >Code source disponible</span
+            >
+          </div>
+          <div class="legend-item">
+            <div class="github-icon private">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+            <span data-translate="sourceCodePrivate">Code source privé</span>
+          </div>
+        </div>
+
+        <!-- Projet 1 - Image à gauche, texte à droite -->
+        <div class="project-row">
+          <div class="project-image">
+            <img src="./public/edf.jpg" alt="Jumeau Numérique EDF R&D" />
+            <div class="github-badge private" title="Code source privé">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 data-translate="project1.title">Jumeau Numérique EDF R&D</h3>
+            <p class="project-tech" data-translate="project1.tech">
+              Vue.js • Node.js • FastAPI • Docker • Kubernetes
+            </p>
+            <p class="project-desc" data-translate="project1.desc">
+              Conception et développement d'un démonstrateur de jumeau numérique
+              d'un turbo-alternateur de centrale nucléaire avec orchestration
+              conteneurisée.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Full-Stack</span>
+              <span class="tag">DevOps</span>
+              <span class="tag">IA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 - Image à droite, texte à gauche -->
+        <div class="project-row reverse">
+          <div class="project-content">
+            <h3 data-translate="project2.title">
+              Deep Learning - Perception Urbaine
+            </h3>
+            <p class="project-tech" data-translate="project2.tech">
+              Python • Deep Learning • ArcGIS • Google Street View • Mapillary
+            </p>
+            <p class="project-desc" data-translate="project2.desc">
+              Recherche sur les applications du Deep Learning en perception
+              urbaine à l'Université d'Ottawa. Analyse comparative de Google
+              Street View et Mapillary pour la génération de heatmaps de
+              perception urbaine.
+            </p>
+            <div class="project-tags">
+              <span class="tag">IA</span>
+              <span class="tag">Géospatial</span>
+              <span class="tag">Recherche</span>
+            </div>
+          </div>
+          <div class="project-image">
+            <img
+              src="./public/ai.png"
+              alt="Deep Learning - Perception Urbaine"
+            />
+            <a
+              href="https://github.com/Hannick5/UrbanPerception"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-badge available"
+              title="Code source disponible"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projet 3 - Image à gauche, texte à droite -->
+        <div class="project-row">
+          <div class="project-image">
+            <img src="./public/map.png" alt="Tuiles Cartographiques Globales" />
+            <div class="github-badge private" title="Code source privé">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 data-translate="project3.title">
+              Tuiles Cartographiques Globales
+            </h3>
+            <p class="project-tech" data-translate="project3.tech">
+              Python • FastAPI • Docker • VM • Microservices
+            </p>
+            <p class="project-desc" data-translate="project3.desc">
+              Génération et service de tuiles cartographiques pour le globe
+              entier via microservices Docker. Architecture scalable pour la
+              distribution de données géospatiales sur le web.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Backend</span>
+              <span class="tag">Géospatial</span>
+              <span class="tag">Microservices</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bouton Voir Plus -->
+        <div class="show-more-container">
+          <button
+            class="show-more-btn"
+            id="showMoreBtn"
+            data-translate="seeAllProjects"
+          >
+            Voir tous mes projets
+          </button>
+        </div>
+
+        <!-- Section Tous les Projets -->
+        <div class="all-projects" id="allProjects" style="display: none">
+          <h3 class="all-projects-title" data-translate="allProjectsTitle">
+            Tous mes projets
+          </h3>
+          <div class="projects-grid" id="projectsGrid">
+            <!-- Les projets seront générés dynamiquement par JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section">
+      <div class="container">
+        <h2 class="section-title" data-translate="experienceTitle">
+          Expérience & Compétences
+        </h2>
+
+        <div class="cv-content">
+          <div class="experience-column">
+            <h3 data-translate="experience">Expérience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h4 data-translate="exp1.title">
+                  Développeur fullstack & DevOps
+                </h4>
+                <p class="timeline-meta" data-translate="exp1.meta">
+                  PME innovante • Janvier 2025 - Présent
+                </p>
+                <p class="timeline-desc" data-translate="exp1.desc">
+                  Architecture de serveurs cartographiques, microservices
+                  Docker, API REST FastAPI/Flask, intégration IA, PostgreSQL.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h4 data-translate="exp2.title">Stage - Jumeau Numérique</h4>
+                <p class="timeline-meta" data-translate="exp2.meta">
+                  EDF R&D • Mai 2024 - Novembre 2024
+                </p>
+                <p class="timeline-desc" data-translate="exp2.desc">
+                  Développement full-stack Vue.js/Node.js/FastAPI, orchestration
+                  Docker/Kubernetes pour jumeau numérique de turbo-alternateur.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h4 data-translate="exp3.title">Formation</h4>
+                <p class="timeline-meta" data-translate="exp3.meta">
+                  ENSG Géomatique • 2021 - 2024
+                </p>
+                <p class="timeline-desc" data-translate="exp3.desc">
+                  École d'ingénieur informatique : Développement Web, SIG,
+                  Conteneurisation, CI/CD, Méthode Agile, Linux, SQL, POO.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3 data-translate="skills">Compétences</h3>
+            <div class="skills-list" id="skillsList">
+              <!-- Les compétences seront générées dynamiquement par JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title" data-translate="contactTitle">Contact</h2>
+        <p class="section-subtitle" data-translate="contactSubtitle">
+          Envie de collaborer ? N'hésitez pas à me contacter pour discuter de
+          nouvelles opportunités !
+        </p>
+
+        <div class="contact-content">
+          <!-- Informations de contact - Colonne gauche -->
+          <div class="contact-info">
+            <h3 data-translate="myContactInfo">Mes coordonnées</h3>
+            <div class="contact-cards">
+              <div class="contact-card">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">abdul.hannick@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <span class="contact-icon">🐙</span>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <div class="contact-value">
+                    github.com/HannickAbdulKuthoos
+                  </div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <span class="contact-icon">💼</span>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <div class="contact-value">
+                    linkedin.com/in/hannick-abdul-kuthoos
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact - Colonne droite -->
+          <div class="contact-form">
+            <h3 data-translate="sendAMessage">Envoyer un message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="motif" data-translate="subject">Motif *</label>
+                <select id="motif" name="motif" required>
+                  <option value="" data-translate="selectSubject">
+                    Sélectionnez un motif
+                  </option>
+                  <option
+                    value="Projet freelance"
+                    data-translate="freelanceProject"
+                  >
+                    Projet freelance
+                  </option>
+                  <option
+                    value="Opportunité d'emploi"
+                    data-translate="jobOpportunity"
+                  >
+                    Opportunité d'emploi
+                  </option>
+                  <option value="Collaboration" data-translate="collaboration">
+                    Collaboration
+                  </option>
+                  <option
+                    value="Question technique"
+                    data-translate="technicalQuestion"
+                  >
+                    Question technique
+                  </option>
+                  <option value="Autre" data-translate="other">Autre</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-translate="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-translate="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows="5"
+                  data-translate-placeholder="describeProject"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="submit-btn"
+                data-translate="sendMessage"
+              >
+                Envoyer un message
+              </button>
+
+              <div
+                id="submitStatus"
+                class="submit-status"
+                style="display: none"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
