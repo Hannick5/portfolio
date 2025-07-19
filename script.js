@@ -350,12 +350,40 @@ function setupNavigation() {
 
 // Switch de langue
 function setupLanguageSwitch() {
+  const languageToggle = document.getElementById("languageToggle");
+  const languageSwitch = document.getElementById("languageSwitch");
   const languageBtns = document.querySelectorAll(".language-btn");
 
+  // Toggle pour afficher/masquer le sélecteur
+  if (languageToggle && languageSwitch) {
+    languageToggle.addEventListener("click", () => {
+      const isVisible = languageSwitch.style.display !== "none";
+
+      if (isVisible) {
+        languageSwitch.style.display = "none";
+        languageToggle.classList.remove("active");
+      } else {
+        languageSwitch.style.display = "flex";
+        languageToggle.classList.add("active");
+      }
+    });
+  }
+
+  // Gestion des boutons de langue
   languageBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.getAttribute("data-lang");
       setLanguage(lang);
+
+      // Mettre à jour le texte du toggle
+      const toggleText = languageToggle.querySelector(".toggle-text");
+      if (toggleText) {
+        toggleText.textContent = lang.toUpperCase();
+      }
+
+      // Masquer le sélecteur après sélection
+      languageSwitch.style.display = "none";
+      languageToggle.classList.remove("active");
     });
   });
 }
