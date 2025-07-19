@@ -36,6 +36,7 @@ const translations = {
       "✓ Votre message a été préparé. Votre client mail va s'ouvrir automatiquement.",
     errorOccurred: "✗ Une erreur s'est produite. Veuillez réessayer.",
     home: "Accueil",
+    projectsNav: "Mes Projets",
     cv: "CV",
     contact: "Contact",
     // Projets
@@ -162,6 +163,7 @@ const translations = {
       "✓ Your message has been prepared. Your email client will open automatically.",
     errorOccurred: "✗ An error occurred. Please try again.",
     home: "Home",
+    projectsNav: "My Projects",
     cv: "CV",
     contact: "Contact",
     // Projets
