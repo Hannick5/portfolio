@@ -37,6 +37,7 @@
   display: flex;
   gap: 18px;
   text-transform: lowercase;
+  align-items: center;
 }
 
 .top-bar a {
@@ -46,6 +47,24 @@
 
 .top-bar a:hover {
   color: #9efc5d;
+}
+
+.lang-toggle {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #1f262f;
+  background: rgba(255, 255, 255, 0.05);
+  color: #d7e7c7;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+}
+
+.lang-toggle:hover {
+  border-color: #9efc5d;
+  color: #9efc5d;
+  background: rgba(158, 252, 93, 0.08);
 }
 
 .hero {
