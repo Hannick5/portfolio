@@ -4,9 +4,7 @@ One-page portfolio React/Vite (thème terminal sombre).
 
 ## Démo
 
-[https://votre-utilisateur.github.io/portfolio/](https://votre-utilisateur.github.io/portfolio/)
-
-> Remplace `votre-utilisateur` par ton pseudo GitHub. Le dépôt doit être nommé `portfolio`.
+[https://Hannick5.github.io/portfolio/](https://Hannick5.github.io/portfolio/)
 
 ## Scripts
 
