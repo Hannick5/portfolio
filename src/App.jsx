@@ -256,7 +256,6 @@ const content = {
 
 const contactLinks = [
   { label: 'Email', href: 'mailto:abdul.hannick@gmail.com' },
-  { label: 'Téléphone', href: 'tel:+33768618120' },
   { label: 'Github', href: 'https://github.com/' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
 ]
